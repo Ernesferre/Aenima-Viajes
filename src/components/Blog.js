@@ -16,7 +16,7 @@ const Blog = () => {
         mt="100px"
         fontSize="24px"
         fontFamily="Montserrat"
-        color="black"
+        color="#2A3037"
         fontWeight="bold"
         textAlign="left"
         mb="20px"
@@ -40,7 +40,6 @@ const Blog = () => {
               alt="articulo_bir_01"
               objectFit="cover"
               borderRadius="5px"
-              h="95%"
             />
             <Text
               color="white"
@@ -75,7 +74,7 @@ const Blog = () => {
               Un puente es una construcción que permite salvar un accidente
               geográfico
             </Text>
-            <HStack position="absolute" top="373px" left="40px">
+            <HStack position="absolute" top="365px" left="40px">
               <Img src={time} alt="time" color="#CBD0D3" size="16px" />
               <Text fontSize="13px" fontFamily="Montserrat" color="#CBD0D3">
                 Hace 2m
@@ -132,13 +131,54 @@ const Blog = () => {
           </VStack>
         </GridItem>
         <GridItem rowSpan={3} colSpan={4} bg="transparent">
-          <Img
-            src={articulo_big_02}
-            alt="articulo_bir_02"
-            objectFit="cover"
-            borderRadius="5px"
-            h="91%"
-          />
+          <VStack position="relative">
+            <Img
+              src={articulo_big_02}
+              alt="articulo_big_02"
+              objectFit="cover"
+              borderRadius="5px"
+              h="100%"
+            />
+            <Text
+              color="white"
+              fontFamily="Montserrat"
+              fontWeight="bold"
+              fontSize="16px"
+              position="absolute"
+              top="30px"
+              left="40px"
+            >
+              AVENTURA
+            </Text>
+            <Text
+              color="white"
+              fontFamily="Montserrat"
+              fontWeight="bold"
+              fontSize="24px"
+              position="absolute"
+              top="280px"
+              left="40px"
+            >
+              Artículo de bosque
+            </Text>
+            <Text
+              color="white"
+              fontFamily="Montserrat"
+              fontSize="16px"
+              position="absolute"
+              top="315px"
+              left="40px"
+            >
+              Lugar poblado de árboles y arbustos. Área con una importante
+              densidad de
+            </Text>
+            <HStack position="absolute" top="365px" left="40px">
+              <Img src={time} alt="time" color="#CBD0D3" size="16px" />
+              <Text fontSize="13px" fontFamily="Montserrat" color="#CBD0D3">
+                Hace 15m
+              </Text>
+            </HStack>
+          </VStack>
         </GridItem>
         <GridItem rowSpan={2} colSpan={2} bg="white">
           <VStack display="flex" alignItems="flex-start">
@@ -152,7 +192,7 @@ const Blog = () => {
               fontSize="16px"
               fontWeight="bold"
               fontFamily="Montserrat"
-              pt="6px"
+              pt="3px"
             >
               Artículo de camino
             </Text>

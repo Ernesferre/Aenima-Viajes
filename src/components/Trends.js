@@ -20,7 +20,7 @@ const Trends = () => {
           mt="100px"
           fontSize="24px"
           fontFamily="Montserrat"
-          color="black"
+          color="#2A3037"
           fontWeight="bold"
           textAlign="left"
           mb="20px"
@@ -32,16 +32,19 @@ const Trends = () => {
             img={card_01}
             title="Montañas y magia"
             description="Aqui la descripcion para Montañas y magia"
+            post="NUEVO"
           />
           <TrendsCard
             img={card_02}
             title="Playa y sol"
             description="La descripcion de playas y sol debe ser ésta"
+            post=""
           />
           <TrendsCard
             img={card_03}
             title="Nieve y aventura"
             description="Contiene la informacion de Nieve y aventura"
+            post=""
           />
         </HStack>
       </VStack>
