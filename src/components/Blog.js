@@ -11,7 +11,7 @@ import time from "../assets/iconos/time.png";
 
 const Blog = () => {
   return (
-    <VStack mt="0rem" mb="6rem" alignItems="flex-start" pl="139px" pr="139px">
+    <VStack mt="-17rem" mb="6rem" alignItems="flex-start" pl="139px" pr="139px">
       <Text
         mt="100px"
         fontSize="24px"
@@ -26,7 +26,6 @@ const Blog = () => {
       </Text>
 
       <Grid
-        // w="1088px"
         mx="auto"
         h="982px"
         templateRows="repeat(6, 1fr)"
@@ -35,14 +34,54 @@ const Blog = () => {
         zIndex="0"
       >
         <GridItem rowSpan={3} colSpan={4} bg="transparent">
-          <Img
-            src={articulo_big_01}
-            alt="articulo_bir_01"
-            objectFit="cover"
-            borderRadius="5px"
-            h="95%"
-            // pb="1rem"
-          />
+          <VStack position="relative">
+            <Img
+              src={articulo_big_01}
+              alt="articulo_bir_01"
+              objectFit="cover"
+              borderRadius="5px"
+              h="95%"
+            />
+            <Text
+              color="white"
+              fontFamily="Montserrat"
+              fontWeight="bold"
+              fontSize="16px"
+              position="absolute"
+              top="30px"
+              left="40px"
+            >
+              CIUDAD
+            </Text>
+            <Text
+              color="white"
+              fontFamily="Montserrat"
+              fontWeight="bold"
+              fontSize="24px"
+              position="absolute"
+              top="280px"
+              left="40px"
+            >
+              Artículo de puente
+            </Text>
+            <Text
+              color="white"
+              fontFamily="Montserrat"
+              fontSize="16px"
+              position="absolute"
+              top="315px"
+              left="40px"
+            >
+              Un puente es una construcción que permite salvar un accidente
+              geográfico
+            </Text>
+            <HStack position="absolute" top="373px" left="40px">
+              <Img src={time} alt="time" color="#CBD0D3" size="16px" />
+              <Text fontSize="13px" fontFamily="Montserrat" color="#CBD0D3">
+                Hace 2m
+              </Text>
+            </HStack>
+          </VStack>
         </GridItem>
         <GridItem rowSpan={2} colSpan={2} bg="transparent">
           <VStack display="flex" alignItems="flex-start">
