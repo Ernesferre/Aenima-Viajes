@@ -11,19 +11,15 @@ const Trends = () => {
       {/* // Desktop Layout */}
 
       <Box
+        d={{ base: "none", md: "flex" }}
         h="736px"
         bg="#EBEBEB"
         position="relative"
-        // mx="auto"
-        d={{ base: "none", md: "flex" }}
       >
         <VStack
-          // position="absolut"
           w="933px"
           h="314px"
           alignItems="flex-start"
-          // ml="3rem"
-          // mr="3rem"
           pl="139px"
           pr="139px"
         >
@@ -64,14 +60,13 @@ const Trends = () => {
       {/* // Mobile Layout */}
 
       <Box h="736px" bg="#EBEBEB" w="360px" d={{ base: "flex", md: "none" }}>
-        <VStack d="flex" mx="auto">
+        <VStack d="flex" mx="auto" alignItems="flex-start">
           <Text
-            mt="100px"
+            mt="80px"
             fontSize="24px"
             fontFamily="Montserrat"
             color="#2A3037"
             fontWeight="bold"
-            textAlign="center"
             mb="20px"
           >
             TENDENCIAS
