@@ -6,16 +6,25 @@ const TrendsCards = ({ img, title, description, post }) => {
   return (
     <Box>
       <VStack
-        w="352px"
+        w={["286px", "360px"]}
+        m="5px"
         h="314px"
+        mx="auto"
         bg="white"
-        borderRadius="10px"
+        borderRadius="6px"
         boxShadow="md"
         display="flex"
         alignItems="flex-start"
         position="relative"
       >
-        <Img src={img} alt="Trends" h="180px" objectFit="cover" />
+        <Img
+          src={img}
+          alt="Trends"
+          h="180px"
+          objectFit="cover"
+          w="100%"
+          borderRadius={["6px 6px 0 0", "0px"]}
+        />
         {post ? (
           <Text
             w="83px"
@@ -40,12 +49,18 @@ const TrendsCards = ({ img, title, description, post }) => {
           fontSize="16px"
           fontFamily="Montserrat"
           fontWeight="bold"
-          pl="33px"
+          pl="25px"
           pt="28px"
         >
           {title}
         </Text>
-        <Text color="#7A838D" fontSize="13px" fontFamily="Montserrat" pl="33px">
+        <Text
+          color="#7A838D"
+          fontSize="13px"
+          fontFamily="Montserrat"
+          pl="25px"
+          pr="25px"
+        >
           {description}
         </Text>
       </VStack>

@@ -11,7 +11,14 @@ import time from "../assets/iconos/time.png";
 
 const Blog = () => {
   return (
-    <VStack mt="-17rem" mb="6rem" alignItems="flex-start" pl="139px" pr="139px">
+    <VStack
+      d={{ base: "none", md: "flex" }}
+      mt="-17rem"
+      mb="6rem"
+      alignItems="flex-start"
+      pl="139px"
+      pr="139px"
+    >
       <Text
         mt="100px"
         fontSize="24px"

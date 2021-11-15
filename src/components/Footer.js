@@ -10,11 +10,11 @@ const Footer = () => {
     <HStack
       bg="#2A3037"
       my="-3rem"
-      w="1366px"
+      w={["360px", "1366px"]}
       h="96px"
       mx="auto"
-      pl="138px"
-      pr="139px"
+      pl={["36px", "139px"]}
+      pr={["36px", "139px"]}
     >
       <Text
         fontFamily="Montserrat"
@@ -29,7 +29,11 @@ const Footer = () => {
       </Text>
 
       <Spacer />
-      <HStack fontFamily="Montserrat" spacing="33px" fontWeight={500}>
+      <HStack
+        fontFamily="Montserrat"
+        spacing={["20px", "33px"]}
+        fontWeight={500}
+      >
         <Img src={instagram} alt="logo" w="18px" h="18px" cursor="pointer" />
         <Img src={facebook} alt="logo" w="18px" h="18px" cursor="pointer" />
       </HStack>

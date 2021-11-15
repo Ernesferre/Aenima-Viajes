@@ -1,31 +1,39 @@
+import React from "react";
 import { Img } from "@chakra-ui/image";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 import { Box, Text, VStack, HStack } from "@chakra-ui/layout";
+
 import Viajes_Hero from "../assets/img/Viajes_Hero.jpg";
 import ic_pin from "../assets/iconos/ic_pin.png";
 import arrow from "../assets/iconos/arrow.png";
-import React from "react";
 
 const Body = () => {
   return (
-    <VStack position="relative">
-      <Img src={Viajes_Hero} alt="Viajes" objectFit="cover" />
+    <VStack position="relative" mx="auto">
+      <Img
+        src={Viajes_Hero}
+        alt="Viajes"
+        h={["600px", "730px"]}
+        objectFit="cover"
+        mx="auto"
+      />
 
       <VStack
         display="flex"
         spacing="20px"
         position="absolute"
-        w="580px"
+        w={["290px", "580px"]}
         h="214px"
-        top="220px"
-        left="138px"
+        top={["200px", "220px"]}
+        left={["25px", "138px"]}
+        pr={["20px", "0px"]}
         alignItems="flex-start"
       >
         <HStack spacing="20px">
-          <Img src={ic_pin} alt="imagen" size="48px" pt="15px" color="white" />
+          <Img src={ic_pin} alt="imagen" w={["12px", "24px"]} color="white" />
 
           <Text
-            fontSize="48px"
+            fontSize={["24px", "48px"]}
             fontWeight="bold"
             color="white"
             fontFamily="Montserrat"
@@ -34,14 +42,12 @@ const Body = () => {
           </Text>
         </HStack>
 
-        <Box bg="white" h="2px" w="535px" color="white">
-          `
-        </Box>
+        <Box bg="white" h="2px" w={["280px", "580px"]} color="white"></Box>
         <Text
           fontFamily="Montserrat"
           fontWeight="bold"
           color="white"
-          fontSize="24px"
+          fontSize={["20px", "24px"]}
           pt="10px"
         >
           Lugares Maravillosos por America del Sur
@@ -51,7 +57,7 @@ const Body = () => {
           color="white"
           fontSize="16px"
           pt="10px"
-          // borderBottom="1px solid white"
+          display={{ base: "none", md: "block" }}
         >
           Estos son algunos lugares que eligen la mayoria de los turistar que
           visitan America del Sur.
@@ -61,7 +67,8 @@ const Body = () => {
           bg="white"
           borderRadius="full"
           position="absolute"
-          top="360px"
+          top={["250px", "360px"]}
+          left="20px"
         >
           <CircularProgressLabel
             color="black"
@@ -74,12 +81,13 @@ const Body = () => {
         <Box
           bg="red.500"
           h="6px"
-          w="140px"
+          w={["53px", "160px"]}
           position="absolute"
-          top="390px"
-          left="-135px"
+          top={["280px", "390px"]}
+          left={["-25px", "-135px"]}
         ></Box>
         <Box
+          d={["none", "block"]}
           w="260px"
           h="157px"
           bg="#2A3037 0% 0% no-repeat padding-box"
