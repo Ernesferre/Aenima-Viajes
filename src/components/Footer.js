@@ -21,9 +21,9 @@ const Footer = () => {
         fontWeight="bold"
         fontSize="25px"
         letterSpacing="2px"
-        h="18.62px"
+        h="30px"
         color="white"
-        pb="30px"
+        alignItems="center"
       >
         VIAJES
       </Text>

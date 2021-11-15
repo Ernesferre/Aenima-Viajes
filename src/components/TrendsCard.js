@@ -23,14 +23,14 @@ const TrendsCards = ({ img, title, description, post }) => {
           h="180px"
           objectFit="cover"
           w="100%"
-          borderRadius={["6px 6px 0 0", "0px"]}
+          borderRadius="6px 6px 0 0"
         />
         {post ? (
           <Text
             w="83px"
             h="32px"
             as="span"
-            bg="red.400"
+            bg="red.300"
             textAlign="center"
             color="white"
             fontWeight="bold"

@@ -25,7 +25,7 @@ const Body = () => {
         w={["290px", "580px"]}
         h="214px"
         top={["200px", "220px"]}
-        left={["25px", "138px"]}
+        left={["37px", "138px"]}
         pr={["20px", "0px"]}
         alignItems="flex-start"
       >
@@ -42,7 +42,9 @@ const Body = () => {
           </Text>
         </HStack>
 
-        <Box bg="white" h="2px" w={["280px", "580px"]} color="white"></Box>
+        <Box bg="white" h="2px" w={["280px", "580px"]} color="white">
+          `
+        </Box>
         <Text
           fontFamily="Montserrat"
           fontWeight="bold"
@@ -63,12 +65,12 @@ const Body = () => {
           visitan America del Sur.
         </Text>
         <CircularProgress
-          size="65px"
+          size={["50px", "65px"]}
           bg="white"
           borderRadius="full"
           position="absolute"
-          top={["250px", "360px"]}
-          left="20px"
+          top={["280px", "360px"]}
+          left={["8px", "0px"]}
         >
           <CircularProgressLabel
             color="black"
@@ -79,12 +81,12 @@ const Body = () => {
           </CircularProgressLabel>
         </CircularProgress>
         <Box
-          bg="red.500"
+          bg="red.300"
           h="6px"
-          w={["53px", "160px"]}
+          w={["53px", "145px"]}
           position="absolute"
-          top={["280px", "390px"]}
-          left={["-25px", "-135px"]}
+          top={["300px", "390px"]}
+          left={["-38px", "-137px"]}
         ></Box>
         <Box
           d={["none", "block"]}

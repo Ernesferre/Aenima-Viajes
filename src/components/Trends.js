@@ -67,7 +67,7 @@ const Trends = () => {
             fontFamily="Montserrat"
             color="#2A3037"
             fontWeight="bold"
-            mb="20px"
+            mb="10px"
           >
             TENDENCIAS
           </Text>

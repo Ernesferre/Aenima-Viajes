@@ -1,4 +1,4 @@
-import { Grid, GridItem, HStack, Text } from "@chakra-ui/layout";
+import { Grid, GridItem, HStack, Spacer, Text } from "@chakra-ui/layout";
 import { Img } from "@chakra-ui/image";
 import { VStack } from "@chakra-ui/react";
 import React from "react";
@@ -221,24 +221,20 @@ const Blog = () => {
 
       <VStack
         d={{ base: "flex", md: "none" }}
-        mt="-12rem"
+        mt="-14rem"
         mb="6rem"
         alignItems="flex-start"
         position="relative"
         fontFamily="Montserrat"
         color="white"
-        // pl="139px"
-        // pr="139px"
-        // maxW="600px"
-        mx="auto"
-        // mt="20px"
+        spacing="41px"
       >
         <Text
-          pl="30px"
+          pl="38px"
           fontSize="24px"
           color="#2A3037"
           fontWeight="bold"
-          mb="20px"
+          // mb="5px"
         >
           BLOG
         </Text>
@@ -248,12 +244,13 @@ const Blog = () => {
           objectFit="cover"
           h="429px"
           w="360px"
+          borderRadius="6px"
         />
         <Text
           fontWeight="bold"
           fontSize="16px"
           position="absolute"
-          top="95px"
+          top="70px"
           left="36px"
         >
           CIUDAD
@@ -262,15 +259,50 @@ const Blog = () => {
           fontWeight="bold"
           fontSize="22px"
           position="absolute"
-          bottom="74px"
+          top="360px"
           left="36px"
         >
           Artículo de puente
         </Text>
-        <HStack position="absolute" bottom="40px" left="36px">
+        <HStack position="absolute" top="410px" left="36px">
           <Img src={time} alt="time" color="#CBD0D3" size="13px" />
           <Text fontSize="13px" color="#CBD0D3">
             Hace 2m
+          </Text>
+        </HStack>
+
+        {/* <Spacer /> */}
+
+        <Img
+          src={articulo_big_02}
+          alt="articulo_bir_01"
+          objectFit="cover"
+          h="429px"
+          w="360px"
+          borderRadius="6px"
+        />
+        <Text
+          fontWeight="bold"
+          fontSize="16px"
+          position="absolute"
+          bottom="370px"
+          left="36px"
+        >
+          AVENTURA
+        </Text>
+        <Text
+          fontWeight="bold"
+          fontSize="22px"
+          position="absolute"
+          bottom="74px"
+          left="36px"
+        >
+          Artículo de bosque
+        </Text>
+        <HStack position="absolute" bottom="40px" left="36px">
+          <Img src={time} alt="time" color="#CBD0D3" size="13px" />
+          <Text fontSize="13px" color="#CBD0D3">
+            Hace 15m
           </Text>
         </HStack>
       </VStack>
