@@ -42,9 +42,14 @@ const Body = () => {
           </Text>
         </HStack>
 
-        <Box bg="white" h="2px" w={["280px", "580px"]} color="white">
-          `
-        </Box>
+        <Box
+          bg="white"
+          h="2px"
+          w={["280px", "536px"]}
+          color="white"
+          position="absolute"
+          top={["30px", "60px"]}
+        ></Box>
         <Text
           fontFamily="Montserrat"
           fontWeight="bold"

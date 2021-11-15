@@ -43,7 +43,7 @@ const Trends = () => {
             />
             <TrendsCard
               img={card_02}
-              title="Playa y sol"
+              title="Playas y sol"
               description="La descripcion de playas y sol debe ser ésta"
               post=""
             />
