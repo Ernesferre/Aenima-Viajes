@@ -1,4 +1,4 @@
-import { Box, HStack, VStack, Text, Stack, Flex } from "@chakra-ui/layout";
+import { Box, HStack, VStack, Text } from "@chakra-ui/layout";
 import React from "react";
 import TrendsCard from "./TrendsCard";
 import card_01 from "../assets/img/card_01.png";
@@ -60,11 +60,15 @@ const Trends = () => {
       {/* // Mobile Layout */}
 
       <Box h="736px" bg="#EBEBEB" w="360px" d={{ base: "flex", md: "none" }}>
-        <VStack d="flex" mx="auto" alignItems="flex-start">
+        <VStack
+          d="flex"
+          mx="auto"
+          alignItems="flex-start"
+          fontFamily="Montserrat"
+        >
           <Text
             mt="80px"
             fontSize="24px"
-            fontFamily="Montserrat"
             color="#2A3037"
             fontWeight="bold"
             mb="10px"

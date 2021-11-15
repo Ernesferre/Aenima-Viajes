@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "./resources/theme/index";
-// import { Box } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/layout";
 import Navbar from "./components/Navbar";
 import Body from "./components/Body";

@@ -1,4 +1,4 @@
-import { Grid, GridItem, HStack, Spacer, Text } from "@chakra-ui/layout";
+import { Grid, GridItem, HStack, Text } from "@chakra-ui/layout";
 import { Img } from "@chakra-ui/image";
 import { VStack } from "@chakra-ui/react";
 import React from "react";
@@ -21,11 +21,12 @@ const Blog = () => {
         alignItems="flex-start"
         pl="139px"
         pr="139px"
+        fontFamily="Montserrat"
+        color="white"
       >
         <Text
           mt="100px"
           fontSize="24px"
-          fontFamily="Montserrat"
           color="#2A3037"
           fontWeight="bold"
           textAlign="left"
@@ -105,6 +106,7 @@ const Blog = () => {
                 fontWeight="bold"
                 fontFamily="Montserrat"
                 pt="6px"
+                color="#2A3037"
               >
                 Artículo de elefante
               </Text>
@@ -129,6 +131,7 @@ const Blog = () => {
                 fontWeight="bold"
                 fontFamily="Montserrat"
                 pt="6px"
+                color="#2A3037"
               >
                 Artículo de loro
               </Text>
@@ -203,6 +206,7 @@ const Blog = () => {
                 fontWeight="bold"
                 fontFamily="Montserrat"
                 pt="3px"
+                color="#2A3037"
               >
                 Artículo de camino
               </Text>
@@ -229,13 +233,7 @@ const Blog = () => {
         color="white"
         spacing="41px"
       >
-        <Text
-          pl="38px"
-          fontSize="24px"
-          color="#2A3037"
-          fontWeight="bold"
-          // mb="5px"
-        >
+        <Text pl="38px" fontSize="24px" color="#2A3037" fontWeight="bold">
           BLOG
         </Text>
         <Img
@@ -270,8 +268,6 @@ const Blog = () => {
             Hace 2m
           </Text>
         </HStack>
-
-        {/* <Spacer /> */}
 
         <Img
           src={articulo_big_02}

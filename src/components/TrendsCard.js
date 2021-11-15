@@ -16,6 +16,7 @@ const TrendsCards = ({ img, title, description, post }) => {
         display="flex"
         alignItems="flex-start"
         position="relative"
+        fontFamily="Montserrat"
       >
         <Img
           src={img}
@@ -30,13 +31,12 @@ const TrendsCards = ({ img, title, description, post }) => {
             w="83px"
             h="32px"
             as="span"
-            bg="red.300"
+            bg="#FA6980"
             textAlign="center"
             color="white"
             fontWeight="bold"
             p="3px"
             borderRadius="6px"
-            fontFamily="Montserrat"
             position="absolute"
             top="157"
             left="33px"
@@ -47,20 +47,14 @@ const TrendsCards = ({ img, title, description, post }) => {
 
         <Text
           fontSize="16px"
-          fontFamily="Montserrat"
           fontWeight="bold"
+          color="#2A3037"
           pl="25px"
           pt="28px"
         >
           {title}
         </Text>
-        <Text
-          color="#7A838D"
-          fontSize="13px"
-          fontFamily="Montserrat"
-          pl="25px"
-          pr="25px"
-        >
+        <Text color="#7A838D" fontSize="13px" pl="25px" pr="25px">
           {description}
         </Text>
       </VStack>
