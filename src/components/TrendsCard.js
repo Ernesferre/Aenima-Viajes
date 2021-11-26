@@ -1,8 +1,10 @@
-import { Img } from "@chakra-ui/image";
+// import { Img } from "@chakra-ui/image";
 import { Box, Text, VStack } from "@chakra-ui/layout";
 import React from "react";
 
-const TrendsCards = ({ img, title, description, post }) => {
+const TrendsCards = ({ id, title, color, description, date }) => {
+  const currentDate = "26-11-2021";
+
   return (
     <Box>
       <VStack
@@ -10,7 +12,7 @@ const TrendsCards = ({ img, title, description, post }) => {
         m="5px"
         h="314px"
         mx="auto"
-        bg="white"
+        bg={color}
         borderRadius="6px"
         boxShadow="md"
         display="flex"
@@ -18,15 +20,7 @@ const TrendsCards = ({ img, title, description, post }) => {
         position="relative"
         fontFamily="Montserrat"
       >
-        <Img
-          src={img}
-          alt="Trends"
-          h="180px"
-          objectFit="cover"
-          w="100%"
-          borderRadius="6px 6px 0 0"
-        />
-        {post ? (
+        {date === currentDate ? (
           <Text
             w="83px"
             h="32px"
@@ -41,7 +35,7 @@ const TrendsCards = ({ img, title, description, post }) => {
             top="157"
             left="33px"
           >
-            {post}
+            Nuevo
           </Text>
         ) : null}
 

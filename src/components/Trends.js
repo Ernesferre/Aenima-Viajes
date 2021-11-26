@@ -1,15 +1,25 @@
 import { Box, HStack, VStack, Text } from "@chakra-ui/layout";
-import React from "react";
+import customFetch from "../utils/customFetch";
+import React, { useState, useEffect } from "react";
 import TrendsCard from "./TrendsCard";
 import card_01 from "../assets/img/card_01.png";
 import card_02 from "../assets/img/card_02.png";
 import card_03 from "../assets/img/card_03.png";
+const { data } = require("../utils/data");
 
 const Trends = () => {
+  const [product, setProduct] = useState([]);
+
+  useEffect(() => {
+    customFetch(data)
+      .then((result) => setProduct(result))
+      .catch((err) => console.log(err));
+  }, []);
+
+  console.log(product);
+
   return (
     <>
-      {/* // Desktop Layout */}
-
       <Box
         d={{ base: "none", md: "flex" }}
         h="736px"
@@ -34,55 +44,22 @@ const Trends = () => {
           >
             TENDENCIAS
           </Text>
+
           <HStack spacing="16px">
-            <TrendsCard
-              img={card_01}
-              title="Montañas y magia"
-              description="Aqui la descripcion para Montañas y magia"
-              post="NUEVO"
-            />
-            <TrendsCard
-              img={card_02}
-              title="Playas y sol"
-              description="La descripcion de playas y sol debe ser ésta"
-              post=""
-            />
-            <TrendsCard
-              img={card_03}
-              title="Nieve y aventura"
-              description="Contiene la informacion de Nieve y aventura"
-              post=""
-            />
+            {product.length > 0 ? (
+              product.map((item) => (
+                <TrendsCard
+                  key={item.id}
+                  title={item.title}
+                  color={item.color}
+                  description={item.description}
+                  date={item.date}
+                />
+              ))
+            ) : (
+              <p>Cargando...</p>
+            )}
           </HStack>
-        </VStack>
-      </Box>
-
-      {/* // Mobile Layout */}
-
-      <Box h="736px" bg="#EBEBEB" w="360px" d={{ base: "flex", md: "none" }}>
-        <VStack
-          d="flex"
-          mx="auto"
-          alignItems="flex-start"
-          fontFamily="Montserrat"
-        >
-          <Text
-            mt="80px"
-            fontSize="24px"
-            color="#2A3037"
-            fontWeight="bold"
-            mb="10px"
-          >
-            TENDENCIAS
-          </Text>
-          <Box>
-            <TrendsCard
-              img={card_01}
-              title="Montañas y magia"
-              description="Aqui la descripcion para Montañas y magia"
-              post="NUEVO"
-            />
-          </Box>
         </VStack>
       </Box>
     </>
